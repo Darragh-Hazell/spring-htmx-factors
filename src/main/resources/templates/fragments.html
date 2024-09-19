@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments</title>
+</head>
+<body>
+
+    <div th:fragment="factors (factors)" id="factors" class="flex flex-col gap-2">
+        <p th:each="factor: ${factors}" th:text="${factor}" class="text-center text-white text-md font-medium"></p>
+    </div>
+
+    <div th:fragment="error" id="factors" class="text-center text-white text-md font-medium">
+        Values above 100000 are not supported
+    </div>
+
+</body>
+</html>
